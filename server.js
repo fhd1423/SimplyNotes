@@ -1,6 +1,6 @@
 const express = require('express')
 const { MongoClient, ServerApiVersion } = require('mongodb');
-let pass = process.env.DB_PASSWORD
+let pass = 'testingpassword'
 const uri = "mongodb+srv://fhd:" + pass + "@cluster0.bq5mpoq.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
