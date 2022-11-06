@@ -59,9 +59,9 @@ export default function Home({ NoteNames }) {
                     My Notes
                     <div>
                         <div className='text-yellow-100'> blank</div>
-                        {
-                            NoteNames.map(name => <div> <button key={name} onClick={() => buttonClicked(name)} className='border-b-2 border-black'> {name} </button></div>)
-                        }
+                        {/*
+                            NoteNames.map(name => <div key={name}> <button onClick={() => buttonClicked(name)} className='border-b-2 border-black'> {name} </button></div>)
+    */}
                     </div>
                 </div>
                 <div className='border-box  h-[550px] w-[400px] lg:h-[550px] lg:w-[1000px] rounded-2xl border-black border-4 p-8 mr-10'>
