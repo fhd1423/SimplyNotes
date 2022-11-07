@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "stuff": "cd .. && node server.js",
-    "build": "next build && npm run stuff",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
