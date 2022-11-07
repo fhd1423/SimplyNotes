@@ -65,7 +65,7 @@ export default function Home({ NoteNames }) {
                     </div>
                 </div>
                 <div className='border-box  h-[550px] w-[400px] lg:h-[550px] lg:w-[1000px] rounded-2xl border-black border-4 p-8 mr-10'>
-                    <span className='text-sm'> Note Title: <input onChange={handleName} placeholder='My New Note Name...' className='p-3 border-black rounded-xl bg-white' /> </span>
+                    <span className='text-2xl'> Note Title: <input onChange={handleName} placeholder='My New Note Name...' className='text-sm p-3 border-black rounded-xl bg-white' /> </span>
                     <div className='mt-2 text-sm'> <textarea onChange={handleText} placeholder='I like to take notes in SimplyNote because...' className=' w-[330px] lg:w-[920px] h-[420px] border-black rounded-xl bg-white' /> </div>
                 </div>
             </div>
