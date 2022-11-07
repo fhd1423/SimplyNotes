@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "front": "cd notes-app && npm run dev",
-    "dev": "concurrently \"node server.js\" \"npm run front\""
+    "bui": "cd notes-app && npm run build",
+    "dev": "concurrently \"node server.js\" \"npm run front\"",
+    "build": "npm run bui"
   },
   "keywords": [],
   "author": "",
