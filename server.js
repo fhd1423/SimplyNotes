@@ -35,6 +35,10 @@ app.post("/username", async (req, res) => {
     res.json({ message: arr });
 });
 
+app.get('/', function (req, res) {
+    res.render('index', {});
+});
+
 app.listen(PORT, console.log(`server is starting at ${PORT}`))
 
 async function mongo(noteName, noteText, noteAuthor) {
