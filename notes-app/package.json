@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "stuff": "cd .. && node server.js",
+    "build": "next build && npm run stuff",
     "start": "next start",
     "lint": "next lint"
   },
