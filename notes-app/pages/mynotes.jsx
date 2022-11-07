@@ -73,15 +73,18 @@ export default function Home({ NoteNames }) {
     )
 }
 
-/*
+
 export const getServerSideProps = async (context) => {
     const session = await getSession(context)
 
     let oldNotes = await axios.post('https://urchin-app-d3wgd.ondigitalocean.app/username', {
         username: session?.user?.email
     })
-    console.log('oldNOtes', oldNotes.data)
-    let NoteNames = oldNotes.data.message
+    let NoteNames = []
+    if (oldNotes) {
+        console.log('oldNOtes', oldNotes.data)
+        NoteNames = oldNotes.data.message
+    }
     console.log(session)
     if (!session) {
         return {
@@ -95,4 +98,3 @@ export const getServerSideProps = async (context) => {
 
     }
 }
-*/
