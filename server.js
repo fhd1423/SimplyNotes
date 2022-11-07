@@ -36,7 +36,7 @@ app.post("/username", async (req, res) => {
 });
 
 app.get('/', function (req, res) {
-    res.render('index', {});
+    res.json({ message: 'homepage' });
 });
 
 app.listen(PORT, console.log(`server is starting at ${PORT}`))
