@@ -34,7 +34,7 @@ export default function Home({ NoteNames }) {
         console.log('clicked')
         console.log(noteName)
         console.log(noteText)
-        await axios.post('http://localhost:8080/api', {
+        await axios.post('https://urchin-app-d3wgd.ondigitalocean.app/api', {
             noteName: noteName,
             noteText: noteText,
             noteAuthor: session.user.email
@@ -73,11 +73,12 @@ export default function Home({ NoteNames }) {
     )
 }
 
+/*
 export const getServerSideProps = async (context) => {
     const session = await getSession(context)
 
-    let oldNotes = await axios.post('http://localhost:8080/username', {
-        username: session.user.email
+    let oldNotes = await axios.post('https://urchin-app-d3wgd.ondigitalocean.app/username', {
+        username: session?.user?.email
     })
     console.log('oldNOtes', oldNotes.data)
     let NoteNames = oldNotes.data.message
@@ -94,3 +95,4 @@ export const getServerSideProps = async (context) => {
 
     }
 }
+*/
